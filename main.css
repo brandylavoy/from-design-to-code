@@ -1,11 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    /*The box-sizing property is used to tell the browser what the sizing properties (width and height) should include border-box.*/
+    box-sizing: border-box;
+    /*reset Chrome user agent styles*/
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-before: 0px;
+    -webkit-padding-after: 0px;
+    -webkit-padding-start: 0px;
+    -webkit-padding-end: 0px;
+    /*reset Firefox user agent styles*/
+    -moz-margin-before: 0px;
+    -moz-margin-after: 0px;
+    -moz-margin-start: 0px;
+    -moz-margin-end: 0px;
+    -moz-padding-before: 0px;
+    -moz-padding-after: 0px;
+    -moz-padding-start: 0px;
+    -moz-padding-end: 0px;
+    /*reset Internet Explorer user agent styles*/
+    -ms-margin-before: 0px;
+    -ms-margin-after: 0px;
+    -ms-margin-start: 0px;
+    -ms-margin-end: 0px;
+    -ms-padding-before: 0px;
+    -ms-padding-after: 0px;
+    -ms-padding-start: 0px;
+    -ms-padding-end: 0px;
+    /*reset Opera user agent styles*/
+    -o-margin-before: 0px;
+    -o-margin-after: 0px;
+    -o-margin-start: 0px;
+    -o-margin-end: 0px;
+    -o-padding-before: 0px;
+    -o-padding-after: 0px;
+    -o-padding-start: 0px;
+    -o-padding-end: 0px;
+}
+
 header {
+    background-color: lightgrey;
     height: 50px;
     width: 100%;
+    font-family: 'Architects Daughter', cursive;
+}
+
+h1,
+nav {
+    display: inline-block;
+    width: auto;
+    margin-top: 15px;
+}
+
+h1 {
+    margin-left: 10px;
 }
 
 nav {
-    background-color: lightgrey;
-    width: 100%;
+    float: right;
+    margin-right: 10px;
 }
 
 ul {
@@ -15,29 +73,46 @@ ul {
     width: 100%;
 }
 
+li {
+    display: inline-block;
+    width: auto;
+}
+
 .left {
     text-align: left;
 }
 
 .right {
-    text-decoration-color: purple;
+    color: purple;
     text-align: right;
-    margin-right: 50px;
+    margin-right: 0px;
+}
+
+input {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 25px;
+    display: inline-block;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+.input-field {
+    margin-left: 50px;
+    width: 60%;
+    padding: 10px;
+}
+
+.submit-button {
+    background-image: url(magnifying-glass.png);
+    background-size: cover;
+    background-position: center center;
+    padding-top: 10px;
 }
 
 img {
     width: 50px;
     height: 50px;
-}
-
-input {
-    margin-top: 100px;
-    margin-left: 50px;
-    margin-bottom: 30px;
-    height: 25px;
-    width: 60%;
-    padding: 10px;
-    border-radius: 5px;
 }
 
 .box {
@@ -52,6 +127,7 @@ input {
     margin-left: 0px;
     margin-right: 0px;
     text-align: center;
+    padding-top: 10px;
 }
 
 .prev {
@@ -61,7 +137,8 @@ input {
     width: 10%;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
-    text-align: center;
+    text-align: center center;
+    padding-top: 10px;
 }
 
 .next {
@@ -72,6 +149,7 @@ input {
     border-bottom-right-radius: 5px;
     border-top-right-radius: 5px;
     text-align: center;
+    padding-top: 10px;
 }
 
 time {
